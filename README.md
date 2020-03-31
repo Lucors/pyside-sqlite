@@ -3,3 +3,6 @@
 ***
 Ниже представлена ER Диаграмма:<br>
 ![ER Diagram](er-dia.png) <br>
+***
+Ниже представлена UML Диаграмма:<br>
+![UML Diagram](uml-dia.png) <br>
