@@ -222,8 +222,8 @@ class TableGC(TableBase):
         model.setHeaderData(2, QtCore.Qt.Horizontal, u"граф. проц", QtCore.Qt.DisplayRole)
         model.setRelation(3, QtSql.QSqlRelation(u"MRER", u"код", u"название"))
         model.setHeaderData(3, QtCore.Qt.Horizontal, u"производитель", QtCore.Qt.DisplayRole)
-        model.setRelation(4, QtSql.QSqlRelation(u"MMR", u"код", u"код"))
-        model.setHeaderData(4, QtCore.Qt.Horizontal, u"код памяти", QtCore.Qt.DisplayRole)
+        model.setRelation(4, QtSql.QSqlRelation(u"MMR", u"код", u"объём"))
+        model.setHeaderData(4, QtCore.Qt.Horizontal, u"объём памяти", QtCore.Qt.DisplayRole)
         model.setEditStrategy(QtSql.QSqlRelationalTableModel.OnManualSubmit)
         model.select()
 
@@ -244,8 +244,8 @@ class TablePURCHASE(TableBase):
         model.setTable(u'PURCHASE')
         model.setRelation(4, QtSql.QSqlRelation(u"GC", u"код", u"название"))
         model.setHeaderData(4, QtCore.Qt.Horizontal, u"видеокарта", QtCore.Qt.DisplayRole)
-        model.setRelation(5, QtSql.QSqlRelation(u"BUYER", u"код", u"код"))
-        model.setHeaderData(5, QtCore.Qt.Horizontal, u"код покупателя", QtCore.Qt.DisplayRole)
+        model.setRelation(5, QtSql.QSqlRelation(u"BUYER", u"код", u"адрес"))
+        model.setHeaderData(5, QtCore.Qt.Horizontal, u"адрес покупателя", QtCore.Qt.DisplayRole)
         model.setEditStrategy(QtSql.QSqlRelationalTableModel.OnManualSubmit)
         model.select()
 
